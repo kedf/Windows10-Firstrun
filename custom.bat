@@ -95,7 +95,7 @@ git config --global http.proxy http://10.100.100.4:3128
 
 if exist Win10-Initial-Setup-Script (rmdir /S /Q .\Win10-Initial-Setup-Script && echo old Repo deleted, the new one will be downloaded now....)
 
-git clone https://github.com/Disassembler0/Win10-Initial-Setup-Script.git
+git clone https://github.com/kedf/Win10-Initial-Setup-Script.git
 if exist "reclaim.preset" (
     cls
     echo custom preset found...
