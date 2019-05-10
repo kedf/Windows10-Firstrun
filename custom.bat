@@ -33,9 +33,9 @@ if exist "C:\ProgramData\chocolatey\choco.exe" (
     echo Installing now specified packages...
     call :choco-programme-install
     
-    cls
-    echo Configure git with proxy
-    call :git-proxy
+REM    cls
+REM    echo Configure git with proxy
+REM    call :git-proxy
 
     cls
     echo Running the Win10-Initial-Setup-Script...
@@ -55,9 +55,9 @@ if exist "C:\ProgramData\chocolatey\choco.exe" (
     echo Installing now specified packages...
     call :choco-programme-install
     
-    cls
-    echo Configure git with proxy
-    call :git-proxy
+REM    cls
+REM    echo Configure git with proxy
+REM    call :git-proxy
 
     cls
     echo Running the Win10-Initial-Setup-Script...
@@ -85,9 +85,9 @@ echo Package %%a is installing...
 cls
 choco upgrade all -y
 
-::-----Git Proxy
-:git-proxy
-git config --global http.proxy http://10.100.100.4:3128
+REM ::-----Git Proxy
+REM :git-proxy
+REM git config --global http.proxy http://10.100.100.4:3128
 
 
 ::-----Win10 Initial Setup Script
