@@ -76,7 +76,7 @@ REM    call :git-proxy
 
 ::-----Start Intall loop
 :choco-programme-install
-choco install git --acceptlicense -y
+choco install git --acceptlicense -y --params "/NoShellIntegration"
 
 for /f "delims=," %%a in (.\install.preset) do choco install %%a --acceptlicense -y
 pause
